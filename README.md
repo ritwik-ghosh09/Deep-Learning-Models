@@ -1,2 +1,2 @@
 # Deep-Learning-Models
-Feed Forward, CNN & RNN from the scratch with NumPy
+Feed Forward, CNN & RNN from scratch with NumPy
