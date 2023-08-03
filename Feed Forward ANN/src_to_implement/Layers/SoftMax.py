@@ -17,7 +17,7 @@ class SoftMax(BaseLayer):
         return self.y_tensor        # prediction output
 
 
-    def backward(self, error_tensor):
+    def backward(self, error_tensor):        # E_n-1 = y^ (E_n - sum over nodes(E_nj * y^_j))
         dx = self.y_tensor * error_tensor       # y^ * E_n
         sum = (error_tensor * self.y_tensor).sum(axis=1, keepdims=True)      # sum over j(E_nj * y^_j  )
         dx -= self.y_tensor * sum
