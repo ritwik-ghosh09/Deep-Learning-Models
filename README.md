@@ -1,2 +1,2 @@
 # Deep-Learning-Models
-Projects and Challenges
+Feed Forward, CNN & RNN from the scratch with NumPy
